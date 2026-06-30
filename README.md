@@ -22,8 +22,6 @@ This page has everything you need before, during, and after the tutorial: a sche
 | Model integration and simulation pipelines (INDRA, EGFR case study) | Achyudhan Kutuva |
 | Applications: WESTPA/WEBNG, RuleHub, and the broader ecosystem | Various |
 
-*(We'll fill in exact times and last names before this goes live — for now this just needs to look complete enough to discuss with Jim.)*
-
 ---
 
 ## What we'll cover
