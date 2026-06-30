@@ -1,0 +1,46 @@
+begin model
+
+begin parameters
+    #Constants
+    NA 6.022e23 #molecules / mole
+    V 39 #muL
+
+    #Initial conditions
+    L0 5973
+    R0 300
+
+    #Rate constants
+    kp1_u 1.084e6 #M^−1 s^−1
+    kp2_u 3.372e8 #M^-1 s^-1
+    koff 0.01 #s^-1
+
+    #Conversions
+    kp1 kp1_u*1e15/V/NA
+    kp2 kp2_u*1e15/V/NA
+end parameters
+
+begin molecule types
+    L(r,r)
+    R(l,l)
+end molecule types
+
+begin seed species
+    L(r,r) L0
+    R(l,l) R0
+end seed species
+
+begin observables
+    Molecules LRbonds L(r!1).R(l!1)
+    Molecules DoublyBoundL R(l!1).L(r!1,r!2).R(l!2) 
+end observables
+
+begin reaction rules
+    L(r,r) + R(l) -> L(r!1,r).R(l!1) kp1
+    L(r,r!+) + R(l) -> L(r!1,r!+).R(l!1) kp2
+    L(r!1).R(l!1) -> L(r) + R(l) koff
+end reaction rules
+
+end model
+
+writeXML()
+simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>10000000})
