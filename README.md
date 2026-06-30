@@ -14,13 +14,13 @@ This page has everything you need before, during, and after the tutorial: a sche
 
 ## Schedule
 
-| Time | Topic | Presenter |
-|------|-------|-----------|
-| TBD | Introduction to rule-based modeling, BioNetGen VSCode extension | James Faeder |
-| TBD | Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
-| TBD | Python tools for rule-based modeling (PyBioNetGen, sensitivity analysis, parameter estimation) | James Faeder |
-| TBD | Model integration and simulation pipelines (INDRA, EGFR case study) | Achyudhan [last name] |
-| TBD | Applications: WESTPA/WEBNG, RuleHub, and the broader ecosystem | [presenter] |
+| Topic | Presenter |
+|-------|-----------|
+| Introduction to rule-based modeling, BioNetGen VSCode extension | James Faeder |
+| Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
+| Python tools for rule-based modeling (PyBioNetGen, sensitivity analysis, parameter estimation) | Laura Strube |
+| Model integration and simulation pipelines (INDRA, EGFR case study) | Achyudhan Kutuva |
+| Applications: WESTPA/WEBNG, RuleHub, and the broader ecosystem | Various |
 
 *(We'll fill in exact times and last names before this goes live — for now this just needs to look complete enough to discuss with Jim.)*
 
