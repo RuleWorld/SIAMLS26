@@ -2,7 +2,7 @@
 title: Rule-Based Modeling Minitutorial — SIAM LS26
 ---
 
-# Rule-Based Modeling with BioNetGen and NFsim
+# Rule-Based Modeling with BioNetGen
 
 **A minitutorial at SIAM Life Sciences 2026 (SIAM LS26)**
 
