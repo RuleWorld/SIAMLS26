@@ -17,8 +17,8 @@ This page has everything you need before, during, and after the tutorial: a sche
 | Topic | Presenter |
 |-------|-----------|
 | Introduction to rule-based modeling, BioNetGen VSCode extension | James Faeder |
-| Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
 | Python tools for rule-based modeling (PyBioNetGen, sensitivity analysis, parameter estimation) | Laura Strube |
+| Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
 | Model integration and simulation pipelines (INDRA, EGFR case study) | Achyudhan Kutuva |
 | Applications: WESTPA/WEBNG, RuleHub, and the broader ecosystem | Various |
 
@@ -30,8 +30,8 @@ This page has everything you need before, during, and after the tutorial: a sche
 
 - **Rule-based modeling concepts** — why some biochemical systems (like multivalent ligand-receptor binding) can't be described with a fixed set of ODEs
 - **BioNetGen** — building rule-based models with `.bngl` files, generating reaction networks, and simulating with ODE/SSA solvers
-- **NFsim** — simulating systems whose reaction networks are too large (or infinite) to enumerate, using network-free simulation
 - **Python ecosystem** — PyBioNetGen, Jupyter-based workflows, sensitivity analysis, parameter estimation, identifiability
+- **NFsim** — simulating systems whose reaction networks are too large (or infinite) to enumerate, using network-free simulation
 - **Applications** — weighted ensemble simulation (WESTPA/WEBNG), model integration with INDRA, and the broader RuleHub model repository
 
 ---
@@ -40,7 +40,7 @@ This page has everything you need before, during, and after the tutorial: a sche
 
 To follow along with the example models (optional, not required for the talk itself):
 
-1. **Install BioNetGen.** Download from the [BioNetGen website](https://bionetgen.org) or install the [BioNetGen VSCode extension](#) for an integrated editing/simulation experience.
+1. **Install BioNetGen.** Follow the instructions from the [BioNetGen website](http://bionetgen.readthedocs.io/en/latest/install.html) or install the [BioNetGen VSCode extension](https://marketplace.visualstudio.com/items?itemName=als251.bngl) for an integrated editing/simulation experience.
 2. **(Optional) Install PyBioNetGen** for Python-based workflows:
    ```bash
    pip install bionetgen
