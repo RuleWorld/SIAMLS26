@@ -12,20 +12,22 @@ begin parameters
     #Rate constants
     kp1_u 1.084e6 #M^−1 s^−1
     kp2_u 3.372e8 #M^-1 s^-1
+    kp3_u 5.4e8 #M^-1 s^-1**
     koff 0.01 #s^-1
 
     #Conversions
     kp1 kp1_u*1e15/V/NA
     kp2 kp2_u*1e15/V/NA
+    kp3 kp3_u*1e15/V/NA
 end parameters
 
 begin molecule types
-    L(r,r)
+    L(r,r,r)
     R(l,l)
 end molecule types
 
 begin seed species
-    L(r,r) L0
+    L(r,r,r) L0
     R(l,l) R0
 end seed species
 
@@ -35,12 +37,15 @@ begin observables
 end observables
 
 begin reaction rules
-    L(r,r) + R(l) -> L(r!1,r).R(l!1) kp1
-    L(r,r!+) + R(l) -> L(r!1,r!+).R(l!1) kp2
+    L(r,r,r) + R(l,l) -> L(r!1,r!2,r!3).R(l!1,l!2) kp1
+    L(r,r,r!+) + R(l,l) -> L(r!1,r!2,r!+).R(l!1,l!2) kp2
+    L(r,r!+,r!+) + R(l,l) -> L(r!1,r!2,r!3).R(l!1,l!2) kp3
     L(r!1).R(l!1) -> L(r) + R(l) koff
 end reaction rules
 
 end model
 
 writeXML()
-simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>10000000})
+
+simulate({method=>'ssa',t_end=>50,n_steps=>50,gml=>1e7})
+# simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>1e7})
