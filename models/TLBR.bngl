@@ -47,5 +47,5 @@ end model
 
 writeXML()
 
-simulate({method=>'ssa',t_end=>50,n_steps=>50,gml=>1e7})
+simulate({method=>'ssa',t_end=>50,n_steps=>50})
 # simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>1e7})

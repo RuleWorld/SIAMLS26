@@ -16,10 +16,11 @@ This page has everything you need before, during, and after the tutorial: a sche
 
 | Topic | Presenter |
 |-------|-----------|
-| Introduction to rule-based modeling, BioNetGen VSCode extension | James Faeder |
-| Python tools for rule-based modeling (PyBioNetGen, sensitivity analysis, parameter estimation) | Laura Strube |
+| Introduction to rule-based modeling, BioNetGen VSCode extension, SBML | James Faeder |
+| Demonstration in VSCode, Interfacing with Matlab | Laura Strube |
+| PyBioNetGen, Sensitivtity Analysis, Parameter Estimation | James Faeder |
 | Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
-| Model integration and simulation pipelines (INDRA, EGFR case study) | Achyudhan Kutuva |
+| Model integration and simulation pipelines with BNGPlayground (INDRA, EGFR case study) | Achyudhan Kutuva |
 | Applications: WESTPA/WEBNG, RuleHub, and the broader ecosystem | Various |
 
 ---
@@ -36,14 +37,15 @@ This page has everything you need before, during, and after the tutorial: a sche
 
 ## Getting started
 
-To follow along with the example models (optional, not required for the talk itself):
+To follow along with the example models (optional, not required for the talk itself), consider one of avenues for accessing BioNetGen:
 
-1. **Install BioNetGen.** Follow the instructions from the [BioNetGen website](http://bionetgen.readthedocs.io/en/latest/install.html) or install the [BioNetGen VSCode extension](https://marketplace.visualstudio.com/items?itemName=als251.bngl) for an integrated editing/simulation experience.
-2. **(Optional) Install PyBioNetGen** for Python-based workflows:
+1. **BNGPlayground** Simply click this [link](https://ruleworld.github.io/bngplayground/)
+
+2. **Install BioNetGen.** Follow the instructions from the [BioNetGen website](http://bionetgen.readthedocs.io/en/latest/install.html) or install the [BioNetGen VSCode extension](https://marketplace.visualstudio.com/items?itemName=BioNetGen-ext.biontegen-vscode-extension) for an integrated editing/simulation experience.
+3. **Install PyBioNetGen** for Python-based workflows:
    ```bash
    pip install bionetgen
    ```
-3. **(Optional) Install NFsim** if you want to run the network-free examples directly — see the [NFsim GitHub repo](https://github.com/RuleWorld/nfsim) for build instructions.
 
 ---
 
@@ -51,28 +53,26 @@ To follow along with the example models (optional, not required for the talk its
 
 All example `.bngl` files discussed in the tutorial are in the [`models/`](./models) folder of this repo:
 
-- `one_arm_model.bngl` — minimal model for learning the BNGL syntax
-- `lr_simple.bngl` — basic L + R ⇌ LR ligand-receptor model
-- `tlbr.bngl` — trivalent ligand / bivalent receptor model (network-free example)
-- `lat_aggregation.bngl` — LAT-Grb2-SOS1 aggregation model
-- `translation_model.bngl` — ribosome translation model (network-free example)
-- `egfr.bngl` — EGFR pathway model (INDRA case study)
+- `LR.bngl` — basic L + R ⇌ LR ligand-receptor model
+- `TLBR.bngl` — trivalent ligand / bivalent receptor model (NFsim)
+- `LAT.bngl` — LAT-Grb2-SOS1 aggregation model (NFsim)
+- `translation.bngl` — ribosome translation model (NFsim)
 
 ---
 
 ## Resources
 
 - [BioNetGen documentation](https://bionetgen.org)
+- [BNGPlayground](https://ruleworld.github.io/bngplayground/)
 - [RuleHub](https://github.com/RuleWorld/RuleHub) — repository of curated rule-based models
 - [NFsim](https://github.com/RuleWorld/nfsim)
-- [WESTPA](https://westpa.github.io/westpa/)
 - Slides: *(link once finalized)*
 
 ---
 
 ## Questions?
 
-We'll have time for Q&A throughout the session — feel free to interrupt with questions. After the tutorial, you can reach us at *[lab contact email]* or open an issue on this repo.
+We'll have time for Q&A throughout the session — feel free to interrupt with questions. After the tutorial, you can reach us at *[bionetgen.main@gmail.com]* or open an issue on this repo.
 
 ---
 
