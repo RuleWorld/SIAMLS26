@@ -105,4 +105,4 @@ end reaction rules
 end model
 
 writeXML()
-simulate({method=>'nf',t_end=>1000,n_steps=>100,gml=>10000000})
+simulate({method=>'nf',t_end=>1000,n_steps=>1000,gml=>10000000})
