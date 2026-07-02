@@ -6,19 +6,19 @@ begin parameters
     V 39 #muL
 
     #Initial conditions
-    L0 5973
-    R0 300
+    L0 1000
+    R0 500
 
     #Rate constants
-    kp_u 1.084e6 #M^−1 s^−1
+    kon_u 1.084e6 #M^−1 s^−1
     koff 0.01 #s^-1
 
     #Conversions
-    kp kp_u*1e15/V/NA
+    kon kon_u*1e15/V/NA
 end parameters
 
 begin molecule types
-    L(r,)
+    L(r)
     R(l)
 end molecule types
 
@@ -34,7 +34,7 @@ begin observables
 end observables
 
 begin reaction rules
-    L(r) + R(L) <-> L(r!1).R(l!1) kp1, koff
+    L(r) + R(l) <-> L(r!1).R(l!1) kon, koff
 end reaction rules
 
 end model
@@ -42,4 +42,3 @@ end model
 writeXML()
 
 simulate({method=>'ssa',t_end=>50,n_steps=>50})
-# simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>1e7})

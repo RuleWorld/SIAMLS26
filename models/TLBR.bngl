@@ -33,13 +33,14 @@ end seed species
 
 begin observables
     Molecules LRbonds L(r!1).R(l!1)
-    Molecules DoublyBoundL R(l!1).L(r!1,r!2).R(l!2) 
+    Molecules DoublyBoundL L(r!+,r!+,r) 
+    Molecules TriplyBoundL L(r!+,r!+,r!+)
 end observables
 
 begin reaction rules
-    L(r,r,r) + R(l,l) -> L(r!1,r!2,r!3).R(l!1,l!2) kp1
-    L(r,r,r!+) + R(l,l) -> L(r!1,r!2,r!+).R(l!1,l!2) kp2
-    L(r,r!+,r!+) + R(l,l) -> L(r!1,r!2,r!3).R(l!1,l!2) kp3
+    L(r,r,r) + R(l) -> L(r!1,r,r).R(l!1) kp1
+    L(r,r,r!+) + R(l) -> L(r!1,r,r!+).R(l!1) kp2
+    L(r,r!+,r!+) + R(l) -> L(r!1,r!+,r!+).R(l!1) kp3
     L(r!1).R(l!1) -> L(r) + R(l) koff
 end reaction rules
 
@@ -47,5 +48,5 @@ end model
 
 writeXML()
 
-simulate({method=>'ssa',t_end=>50,n_steps=>50})
-# simulate({method=>'nf',t_end=>50,n_steps=>50,gml=>1e7})
+simulate({method=>'ssa',t_end=>1000,n_steps=>1000})
+# simulate({method=>'nf',t_end=>1000,n_steps=>1000,gml=>1e7})
