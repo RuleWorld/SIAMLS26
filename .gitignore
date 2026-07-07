@@ -1,5 +1,6 @@
 models/results_*
 IntroBioNetGen/results_*
+notebooks/results_*
 .vscode/settings.json
 .DS_Store
 .DS_Store/

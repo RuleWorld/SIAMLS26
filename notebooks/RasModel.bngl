@@ -1,0 +1,102 @@
+begin model
+# Minimal model of processive Ras activation in membrane corrals
+#
+# This model demonstrates processivity-driven quantization of Ras activation
+# as described in:
+#
+# Yonosh, K.A. and Faeder, J.R. "Mathematical modeling predicts quantization
+# of Ras activation in membrane corrals" Research Square preprint (2025)
+# https://www.researchsquare.com/article/rs-7889340/v1
+#
+# The model is derived from the experimental system and baseline parameters in:
+#
+# Lee, A.A. et al. "Bimodality in Ras signaling originates from processivity
+# of the Ras activator SOS without deterministic bistability"
+# Sci. Adv. 10, eadi0707 (2024)
+#
+# Key features:
+# - Processive SOS activation: SOS can activate many Ras molecules per
+#   membrane dwell time (processivity)
+# - Confined corral: Fixed number of Ras molecules (N_ras = 100)
+# - Quantized output: Discrete SOS occupancy states (0,1,2,...) produce
+#   distinct peaks in RasGTP distribution
+#
+# The model demonstrates how processivity-driven quantization can generate
+# discrete signaling outputs without requiring bistability or positive feedback.
+
+begin parameters
+  # Rate constants (simplified from Lee et al. 2024)
+  # This minimal model uses effective rates that capture the essential
+  # processivity mechanism without full mechanistic detail
+
+  k_bind   5e-3   # Effective SOS membrane recruitment rate (s^-1)
+  k_unbind 1e-2   # SOS membrane dissociation rate (s^-1)
+                  # Mean dwell time = 1/k_unbind = 100 s
+
+  k_cat    0.2    # RasGDP -> RasGTP catalytic rate per SOS (s^-1)
+                  # A single SOS can activate ~20 Ras in one dwell time
+                  # This processivity (k_cat * dwell_time >> 1) is key
+                  # to quantization
+
+  k_deact  0.5    # RasGTP -> RasGDP deactivation rate (s^-1)
+                  # Represents RasGAP-mediated hydrolysis
+
+  N_ras    1000    # Total number of Ras molecules in corral
+                  # Confined number enables discrete SOS occupancy states
+end parameters
+
+begin species
+  # Initial conditions: All Ras inactive (RasGDP), no SOS on membrane
+  Ras() N_ras
+end species
+
+begin observables
+  # Track SOS occupancy state and Ras activation
+  Molecules SOS_act SOS_act()   # Number of membrane-bound SOS (n = 0,1,2,...)
+  Molecules Ras_act Ras_act()   # Number of active Ras (RasGTP)
+
+  # The joint distribution P(SOS_act, Ras_act) exhibits quantization:
+  # Each SOS occupancy state n produces a distinct peak in Ras_act distribution
+end observables
+
+begin reaction rules
+  # Rule 1: SOS membrane recruitment
+  # In Lee et al. 2024, this represents the combined process of:
+  # - Receptor activation
+  # - Adapter (GRB2) recruitment
+  # - SOS translocation to membrane
+  0 -> SOS_act() k_bind
+
+  # Rule 2: SOS membrane dissociation
+  # Long dwell time (1/k_unbind = 100 s) relative to catalysis
+  # enables processivity: many Ras activations per SOS binding event
+  SOS_act() -> 0 k_unbind
+
+  # Rule 3: Processive Ras activation
+  # SOS catalyzes RasGDP -> RasGTP exchange
+  # Note: SOS_act() appears on both sides (catalyst, not consumed)
+  # This processivity is essential for quantization
+  SOS_act() + Ras() -> SOS_act() + Ras_act() k_cat
+
+  # Rule 4: Ras deactivation
+  # RasGAP-mediated GTP hydrolysis returns Ras to inactive state
+  Ras_act() -> Ras() k_deact
+end reaction rules
+end model
+
+# Simulation using stochastic simulation algorithm (Gillespie SSA)
+# Stochastic simulation is essential to observe quantization because:
+# - Discrete molecule numbers create distinct SOS occupancy states
+# - Fluctuations between states produce multimodal distributions
+# - Deterministic ODE simulation would only show mean-field behavior
+#
+# Simulation parameters:
+# - method: "ssa" = Gillespie stochastic simulation algorithm
+# - t_end: 10,000 s allows ~100 SOS binding/unbinding cycles
+# - n_steps: 100,000 gives fine temporal resolution (0.1 s steps)
+#simulate({method=>"ssa",t_start=>0,t_end=>10000,n_steps=>100000})
+
+# ODE simulation (deterministic, mean-field approximation)
+# Uncomment to compare with stochastic results
+# Note: ODE predicts only average behavior, not quantized peaks
+simulate({method=>"ode",t_start=>0,t_end=>100000,n_steps=>100000})
