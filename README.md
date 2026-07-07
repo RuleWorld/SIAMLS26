@@ -49,6 +49,7 @@ To follow along with the example models (optional, not required for the talk its
 
 All example `.bngl` files discussed in the tutorial are in the [`models/`](./models) folder of this repo:
 
+- `Example_SimpleSTAT.bngl`— Simple model of IL10-induced STAT phosphorylation
 - `LR.bngl` — basic L + R ⇌ LR ligand-receptor model
 - `TLBR.bngl` — trivalent ligand / bivalent receptor model (NFsim)
 - `LAT.bngl` — LAT-Grb2-SOS1 aggregation model (NFsim)
