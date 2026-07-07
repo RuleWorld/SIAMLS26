@@ -13,7 +13,7 @@ This page has everything you need before, during, and after the tutorial: a sche
 | Topic | Presenter |
 |-------|-----------|
 | Introduction to rule-based modeling, BioNetGen VSCode extension, SBML | James Faeder |
-| Demonstration in VSCode, Interfacing with Matlab | Laura Strube (LFStrube@gmail.com) |
+| Demonstration in VSCode, Interfacing with MATLAB | Laura Strube (LFStrube@gmail.com) |
 | PyBioNetGen, Stochastic Simulation, Sensitivity Analysis, Parameter Estimation | James Faeder |
 | Network-based vs. network-free simulation, NFsim | Alex DiBiasi |
 | Model integration and simulation pipelines with BNGPlayground (INDRA, EGFR case study) | Achyudhan Kutuva |
