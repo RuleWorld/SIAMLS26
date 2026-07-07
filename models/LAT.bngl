@@ -2,14 +2,15 @@ begin model
 
 begin parameters
     #Constants
-    V           3.6e-10     #cm^3
-    A           8.0e06      #cm^2
+    Fx          100
+    V           3.6e-10/Fx     #cm^3
+    A           8.0e-6/Fx      #cm^2
     NA          6.022e23    #molecules / mole
 
     #Initial Conditions
-    Gt          7.5e5       #molecules / cell
-    St          3.75e5       #molecules / cell
-    Lt          3.5e5       #molecules / cell
+    Gt          7.5e5/Fx       #molecules / cell
+    St          3.75e5/Fx       #molecules / cell
+    Lt          2e5/Fx       #molecules / cell
 
     #Grb2 and SOS1
     kpGS_u      9.5e4       #M^-1 * sec^-1
@@ -24,6 +25,7 @@ begin parameters
 
     #Conversions
     kpGS        kpGS_u/V/NA*1000    #molecules^-1 * sec^-1
+    skpGS       sigma*kpGS
     kpGS_surf   kpGS_surf_u/A/NA      #molecules^-1 * sec^-1
     kpGL        kpGL_u/V/NA*1000    #molecules^-1 * sec^-1
     kpGL_bar    kpGL_bar_u/A/NA       #molecules^-1 * sec^-1
@@ -31,78 +33,47 @@ end parameters
 
 begin molecule types
     G(SH2,SH3)
-    S(g1,g2)
-    L(g1,g2,g3)
+    S(g,g)
+    L(g,g,g)
 end molecule types
 
 begin seed species
     G(SH2,SH3)  Gt
-    S(g1,g2)      St
-    L(g1,g2,g3)    Lt
+    S(g,g)      St
+    L(g,g,g)    Lt
 end seed species
 
 begin observables
-    Molecules BuriedLAT L(g1!+,g2!+,g3!+)
+    Molecules BuriedGRB2    G(SH2!+,SH3!+)
+    Molecules BuriedSOS1    S(g!+,g!+)
+    Molecules BuriedLAT     L(g!+,g!+,g!+)
 end observables
-
-begin functions
-    skpGS() = sigma*kpGS
-end functions
 
 begin reaction rules
     # ..G + S <-> ..GS
-    G(SH3) + S(g1,g2) <-> G(SH3!1).S(g1!1,g2) kpGS,kmGS
-    G(SH3) + S(g1,g2) <-> G(SH3!1).S(g1,g2!1) kpGS,kmGS
+    G(SH3) + S(g,g) <-> G(SH3!1).S(g!1,g) kpGS,kmGS #1/2,11/12
 
     # ..G + SG.. <-> ..GSG..
-    G(SH2,SH3) + S(g1!1,g2).G(SH2,SH3!1) <-> G(SH2,SH3!2).S(g1!1,g2!2).G(SH2,SH3!1) skpGS(),kmGS
-    G(SH2,SH3) + S(g1,g2!1).G(SH2,SH3!1) <-> G(SH2,SH3!2).S(g1!2,g2!1).G(SH2,SH3!1) skpGS(),kmGS
-
-    G(SH2!+,SH3) + S(g1!1,g2).G(SH2,SH3!1) <-> G(SH2!+,SH3!2).S(g1!1,g2!2).G(SH2,SH3!1) skpGS(),kmGS
-    G(SH2!+,SH3) + S(g1,g2!1).G(SH2,SH3!1) <-> G(SH2!+,SH3!2).S(g1!2,g2!1).G(SH2,SH3!1) skpGS(),kmGS
-
-    G(SH2,SH3) + S(g1!1,g2).G(SH2!+,SH3!1) <-> G(SH2,SH3!2).S(g1!1,g2!2).G(SH2!+,SH3!1) skpGS(),kmGS
-    G(SH2,SH3) + S(g1,g2!1).G(SH2!+,SH3!1) <-> G(SH2,SH3!2).S(g1!2,g2!1).G(SH2!+,SH3!1) skpGS(),kmGS
-
-    G(SH2!+,SH3) + S(g1!1,g2).G(SH2!+,SH3!1) <-> G(SH2!+,SH3!2).S(g1!1,g2!2).G(SH2!+,SH3!1) kpGS_surf,kmGS
-    G(SH2!+,SH3) + S(g1,g2!1).G(SH2!+,SH3!1) <-> G(SH2!+,SH3!2).S(g1!2,g2!1).G(SH2!+,SH3!1) kpGS_surf,kmGS
+    G(SH2,SH3) + S(g!1,g).G(SH2,SH3!1) <-> G(SH2,SH3!2).S(g!1,g!2).G(SH2,SH3!1) skpGS,kmGS #3/4
+    G(SH2!+,SH3) + S(g!1,g).G(SH2,SH3!1) <-> G(SH2!+,SH3!2).S(g!1,g!2).G(SH2,SH3!1) skpGS,kmGS #13/14
+    G(SH2,SH3) + S(g!1,g).G(SH2!+,SH3!1) <-> G(SH2,SH3!2).S(g!1,g!2).G(SH2!+,SH3!1) skpGS,kmGS #15/16
+    G(SH2!+,SH3) + S(g!1,g).G(SH2!+,SH3!1) <-> G(SH2!+,SH3!2).S(g!1,g!2).G(SH2!+,SH3!1) kpGS_surf,kmGS #19/20
 
     # ..L + G <-> ..LG
-    L(g1) + G(SH2,SH3) <-> L(g1!1).G(SH2!1,SH3) kpGL,kmGL
-    L(g2) + G(SH2,SH3) <-> L(g2!1).G(SH2!1,SH3) kpGL,kmGL
-    L(g3) + G(SH2,SH3) <-> L(g3!1).G(SH2!1,SH3) kpGL,kmGL
+    L(g) + G(SH2,SH3) <-> L(g!1).G(SH2!1,SH3) kpGL,kmGL #5/6
 
     # ..L + GS <-> ..LGS
-    L(g1) + G(SH2,SH3!1).S(g1!1,g2) <-> L(g1!2).G(SH2!2,SH3!1).S(g1!1,g2) kpGL,kmGL
-    L(g1) + G(SH2,SH3!1).S(g1,g2!1) <-> L(g1!2).G(SH2!2,SH3!1).S(g1,g2!1) kpGL,kmGL
-
-    L(g2) + G(SH2,SH3!1).S(g1!1,g2) <-> L(g2!2).G(SH2!2,SH3!1).S(g1!1,g2) kpGL,kmGL
-    L(g2) + G(SH2,SH3!1).S(g1,g2!1) <-> L(g2!2).G(SH2!2,SH3!1).S(g1,g2!1) kpGL,kmGL
-
-    L(g3) + G(SH2,SH3!1).S(g1!1,g2) <-> L(g3!2).G(SH2!2,SH3!1).S(g1!1,g2) kpGL,kmGL
-    L(g3) + G(SH2,SH3!1).S(g1,g2!1) <-> L(g3!2).G(SH2!2,SH3!1).S(g1,g2!1) kpGL,kmGL
+    L(g) + G(SH2,SH3!1).S(g!1,g) <-> L(g!2).G(SH2!2,SH3!1).S(g!1,g) kpGL,kmGL #7/8
 
     # ..L + GSG <-> ..LGSG
-    L(g1) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) <-> L(g1!3).G(SH2!3,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) kpGL,kmGL
-    L(g2) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) <-> L(g2!3).G(SH2!3,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) kpGL,kmGL
-    L(g3) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) <-> L(g3!3).G(SH2!3,SH3!1).S(g1!1,g2!2).G(SH2,SH3!2) kpGL,kmGL
+    L(g) + G(SH2,SH3!1).S(g!1,g!2).G(SH2,SH3!2) <-> L(g!3).G(SH2!3,SH3!1).S(g!1,g!2).G(SH2,SH3!2) kpGL,kmGL #9/10
 
     # ..L + GSGL.. <-> ..LGSGL..
-    L(g1) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) <-> L(g1!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) kpGL_bar,kmGL
-    L(g2) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) <-> L(g2!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) kpGL_bar,kmGL
-    L(g3) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) <-> L(g3!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g1!3) kpGL_bar,kmGL
-
-    L(g1) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) <-> L(g1!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) kpGL_bar,kmGL
-    L(g2) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) <-> L(g2!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) kpGL_bar,kmGL
-    L(g3) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) <-> L(g3!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g2!3) kpGL_bar,kmGL
-
-    L(g1) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) <-> L(g1!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) kpGL_bar,kmGL
-    L(g2) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) <-> L(g2!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) kpGL_bar,kmGL
-    L(g3) + G(SH2,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) <-> L(g3!4).G(SH2!4,SH3!1).S(g1!1,g2!2).G(SH2!3,SH3!2).L(g3!3) kpGL_bar,kmGL
-
+    L(g) + G(SH2,SH3!1).S(g!1,g!2).G(SH2!3,SH3!2).L(g!3) <-> L(g!4).G(SH2!4,SH3!1).S(g!1,g!2).G(SH2!3,SH3!2).L(g!3) kpGL_bar,kmGL #17/18
+    
 end reaction rules
 
 end model
 
-writeXML()
-simulate({method=>'nf',t_end=>1000,n_steps=>1000,gml=>10000000})
+simulate({method=>'nf',t_end=>100,n_steps=>100})
+writeModel({overwrite=>1})

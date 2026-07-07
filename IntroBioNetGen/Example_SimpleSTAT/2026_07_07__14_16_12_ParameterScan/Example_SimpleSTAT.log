@@ -1,0 +1,2639 @@
+BioNetGen version 2.9.2
+Reading from file c:\Users\laura\OneDrive - University of Pittsburgh\Desktop\SIAM2026\2026_07_08_SIAM_BioNetGen\ModelFilesAndOutputs\Example_SimpleSTAT\2026_07_07__14_16_12\Example_SimpleSTAT.bngl (level 0)
+Read 26 parameters.
+Read 9 molecule types.
+Read 9 species.
+Read 6 observable(s).
+Read 13 reaction rule(s).
+ACTION: generate_network( Example_SimpleSTAT )
+Iteration   0:     9 species      0 rxns  0.00e+00 CPU s
+Iteration   1:    10 species      2 rxns  0.00e+00 CPU s
+Iteration   2:    11 species      4 rxns  0.00e+00 CPU s
+Iteration   3:    12 species      6 rxns  1.50e-02 CPU s
+Iteration   4:    15 species     10 rxns  0.00e+00 CPU s
+Iteration   5:    17 species     13 rxns  0.00e+00 CPU s
+Iteration   6:    17 species     17 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     1 reactions 1.50e-02 CPU s 1.50e-02 CPU s/rxn
+Rule   9:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  11:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  12:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  13:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :    17 reactions 1.50e-02 CPU s 8.82e-04 CPU s/rxn
+Writing full species names in reactions.
+Wrote network in net format to Example_SimpleSTAT.net.
+CPU TIME: generate_network 0.02 s.
+ACTION: parameter_scan( )
+Saved current species concentrations with label "SCAN"
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net 25 1
+[simulation PID is: 118432]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.101010101010101
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net 25 1
+[simulation PID is: 41840]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.202020202020202
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net 25 1
+[simulation PID is: 79304]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.303030303030303
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net 25 1
+[simulation PID is: 17796]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.404040404040404
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net 25 1
+[simulation PID is: 71956]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.505050505050505
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net 25 1
+[simulation PID is: 87816]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.606060606060606
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net 25 1
+[simulation PID is: 117372]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.707070707070707
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net 25 1
+[simulation PID is: 46380]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.808080808080808
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net 25 1
+[simulation PID is: 50988]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 0.909090909090909
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net 25 1
+[simulation PID is: 38732]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.05 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.01010101010101
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net 25 1
+[simulation PID is: 31292]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.11111111111111
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net 25 1
+[simulation PID is: 96592]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.21212121212121
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net 25 1
+[simulation PID is: 57284]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.31313131313131
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net 25 1
+[simulation PID is: 112220]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.41414141414141
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net 25 1
+[simulation PID is: 41276]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.51515151515152
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net 25 1
+[simulation PID is: 95260]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.61616161616162
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net 25 1
+[simulation PID is: 83696]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.71717171717172
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net 25 1
+[simulation PID is: 100660]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.81818181818182
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net 25 1
+[simulation PID is: 120604]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 1.91919191919192
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net 25 1
+[simulation PID is: 20096]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.02020202020202
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net 25 1
+[simulation PID is: 77544]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.12121212121212
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net 25 1
+[simulation PID is: 120472]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.22222222222222
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net 25 1
+[simulation PID is: 60900]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.32323232323232
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net 25 1
+[simulation PID is: 25712]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.42424242424242
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net 25 1
+[simulation PID is: 63872]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.52525252525253
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net 25 1
+[simulation PID is: 114188]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.62626262626263
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net 25 1
+[simulation PID is: 86368]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.72727272727273
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net 25 1
+[simulation PID is: 65568]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.82828282828283
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net 25 1
+[simulation PID is: 48592]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 2.92929292929293
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net 25 1
+[simulation PID is: 48064]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.03030303030303
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net 25 1
+[simulation PID is: 42796]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.13131313131313
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net 25 1
+[simulation PID is: 100428]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.23232323232323
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net 25 1
+[simulation PID is: 97356]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.33333333333333
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net 25 1
+[simulation PID is: 81116]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.43434343434343
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net 25 1
+[simulation PID is: 98800]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.53535353535354
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net 25 1
+[simulation PID is: 11748]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.63636363636364
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net 25 1
+[simulation PID is: 82312]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.73737373737374
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net 25 1
+[simulation PID is: 60264]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.83838383838384
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net 25 1
+[simulation PID is: 63372]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 3.93939393939394
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net 25 1
+[simulation PID is: 50112]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.04040404040404
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net 25 1
+[simulation PID is: 109868]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.05 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.14141414141414
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net 25 1
+[simulation PID is: 83436]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.24242424242424
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net 25 1
+[simulation PID is: 95192]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.34343434343434
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net 25 1
+[simulation PID is: 24948]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.44444444444444
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net 25 1
+[simulation PID is: 52656]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.54545454545454
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net 25 1
+[simulation PID is: 115016]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.64646464646465
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net 25 1
+[simulation PID is: 92308]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.74747474747475
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net 25 1
+[simulation PID is: 51832]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.84848484848485
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net 25 1
+[simulation PID is: 64484]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 4.94949494949495
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net 25 1
+[simulation PID is: 78312]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.05050505050505
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net 25 1
+[simulation PID is: 87564]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.15151515151515
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net 25 1
+[simulation PID is: 46708]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.25252525252525
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net 25 1
+[simulation PID is: 55004]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.35353535353535
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net 25 1
+[simulation PID is: 53560]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.45454545454545
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net 25 1
+[simulation PID is: 58372]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.55555555555556
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net 25 1
+[simulation PID is: 58908]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.65656565656566
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net 25 1
+[simulation PID is: 15760]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.75757575757576
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net 25 1
+[simulation PID is: 116704]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.85858585858586
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net 25 1
+[simulation PID is: 3720]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 5.95959595959596
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net 25 1
+[simulation PID is: 24780]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.06060606060606
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net 25 1
+[simulation PID is: 84380]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.net
+17 reaction(s) have nonzero rate
+Initialization took 0.08 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.08 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.16161616161616
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net 25 1
+[simulation PID is: 94896]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.26262626262626
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net 25 1
+[simulation PID is: 59072]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.36363636363636
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net 25 1
+[simulation PID is: 35112]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.46464646464646
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net 25 1
+[simulation PID is: 118688]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.56565656565657
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net 25 1
+[simulation PID is: 102208]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.66666666666667
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net 25 1
+[simulation PID is: 107392]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.76767676767677
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net 25 1
+[simulation PID is: 87412]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.86868686868687
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net 25 1
+[simulation PID is: 60756]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.net
+17 reaction(s) have nonzero rate
+Initialization took 0.06 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.06 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 6.96969696969697
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net 25 1
+[simulation PID is: 36172]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.07070707070707
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net 25 1
+[simulation PID is: 49316]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.17171717171717
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net 25 1
+[simulation PID is: 114652]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.27272727272727
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net 25 1
+[simulation PID is: 83900]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.37373737373737
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net 25 1
+[simulation PID is: 66552]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.47474747474747
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net 25 1
+[simulation PID is: 60516]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.57575757575758
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net 25 1
+[simulation PID is: 74856]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.67676767676768
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net 25 1
+[simulation PID is: 45588]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.77777777777778
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net 25 1
+[simulation PID is: 106300]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.87878787878788
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net 25 1
+[simulation PID is: 118916]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 7.97979797979798
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net 25 1
+[simulation PID is: 85696]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.08080808080808
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net 25 1
+[simulation PID is: 59148]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.18181818181818
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net 25 1
+[simulation PID is: 51664]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.28282828282828
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net 25 1
+[simulation PID is: 105408]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.38383838383838
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net 25 1
+[simulation PID is: 9560]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.48484848484848
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net 25 1
+[simulation PID is: 25652]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.58585858585859
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net 25 1
+[simulation PID is: 40688]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.net
+17 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.68686868686869
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net 25 1
+[simulation PID is: 78152]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.78787878787879
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net 25 1
+[simulation PID is: 81444]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.88888888888889
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net 25 1
+[simulation PID is: 62472]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 8.98989898989899
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net 25 1
+[simulation PID is: 27460]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.gdat.
+Propagation took 1.60e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.09090909090909
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net 25 1
+[simulation PID is: 76476]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.19191919191919
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net 25 1
+[simulation PID is: 30400]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.29292929292929
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net 25 1
+[simulation PID is: 102508]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.03 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.39393939393939
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net 25 1
+[simulation PID is: 102860]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.49494949494949
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net 25 1
+[simulation PID is: 110652]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.5959595959596
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net 25 1
+[simulation PID is: 21100]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.6969696969697
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net 25 1
+[simulation PID is: 22388]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.7979797979798
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net 25 1
+[simulation PID is: 46988]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 9.8989898989899
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net 25 1
+[simulation PID is: 70048]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.net
+17 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.gdat.
+Propagation took 1.50e-02 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.cdat
+WARNING: Changing value of previously defined variable 'IL10_0'
+Set parameter IL10_0 to value 10
+Reset species concentrations to "SCAN" saved values.
+ACTION: simulate( method=>"cvode" )
+TEND:25
+Network simulation using cvode
+Wrote network in net format to Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net.
+Running run_network on IMMGTCHXPS1
+full command: C:\Users\laura\anaconda3\Lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net 25 1
+[simulation PID is: 77480]
+run_network 3.0
+Read 26 parameters from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net
+Read 17 species from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net
+Read 6 group(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net
+Read 0 function(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net
+Found species with index 0 at line 51: assuming this is the null species.
+Read 17 reaction(s) from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.net
+17 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.cdat.
+Time course of groups written to file Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.01 CPU s 0.00 clock s
+Updating species concentrations from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.cdat
+Reset species concentrations to "SCAN" saved values.
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00001.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00002.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00003.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00004.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00005.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00006.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00007.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00008.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00009.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00010.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00011.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00012.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00013.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00014.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00015.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00016.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00017.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00018.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00019.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00020.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00021.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00022.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00023.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00024.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00025.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00026.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00027.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00028.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00029.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00030.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00031.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00032.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00033.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00034.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00035.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00036.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00037.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00038.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00039.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00040.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00041.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00042.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00043.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00044.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00045.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00046.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00047.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00048.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00049.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00050.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00051.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00052.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00053.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00054.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00055.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00056.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00057.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00058.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00059.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00060.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00061.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00062.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00063.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00064.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00065.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00066.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00067.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00068.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00069.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00070.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00071.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00072.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00073.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00074.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00075.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00076.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00077.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00078.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00079.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00080.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00081.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00082.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00083.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00084.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00085.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00086.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00087.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00088.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00089.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00090.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00091.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00092.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00093.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00094.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00095.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00096.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00097.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00098.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00099.gdat
+Extracting observable trajectory from Example_SimpleSTAT_IL10_0\Example_SimpleSTAT_IL10_0_00100.gdat
+CPU TIME: parameter_scan 0.73 s.
+Finished processing file c:\Users\laura\OneDrive - University of Pittsburgh\Desktop\SIAM2026\2026_07_08_SIAM_BioNetGen\ModelFilesAndOutputs\Example_SimpleSTAT\2026_07_07__14_16_12\Example_SimpleSTAT.bngl.
+CPU TIME: total 0.77 s.

@@ -1,0 +1,35 @@
+BioNetGen version 2.9.2
+Reading from file c:\Users\laura\OneDrive - University of Pittsburgh\Desktop\SIAM2026\2026_07_08_SIAM_BioNetGen\ModelFilesAndOutputs\Example_SimpleSTAT\2026_07_07__13_47_25\Example_SimpleSTAT.bngl (level 0)
+Read 26 parameters.
+Read 9 molecule types.
+Read 9 species.
+Read 6 observable(s).
+Read 13 reaction rule(s).
+ACTION: generate_network( Example_SimpleSTAT )
+Iteration   0:     9 species      0 rxns  0.00e+00 CPU s
+Iteration   1:    10 species      2 rxns  1.50e-02 CPU s
+Iteration   2:    11 species      4 rxns  0.00e+00 CPU s
+Iteration   3:    12 species      6 rxns  0.00e+00 CPU s
+Iteration   4:    15 species     10 rxns  0.00e+00 CPU s
+Iteration   5:    17 species     13 rxns  0.00e+00 CPU s
+Iteration   6:    17 species     17 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   9:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  11:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  12:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  13:     1 reactions 1.50e-02 CPU s 1.50e-02 CPU s/rxn
+Total   :    17 reactions 1.50e-02 CPU s 8.82e-04 CPU s/rxn
+Writing full species names in reactions.
+Wrote network in net format to Example_SimpleSTAT.net.
+CPU TIME: generate_network 0.03 s.
+Finished processing file c:\Users\laura\OneDrive - University of Pittsburgh\Desktop\SIAM2026\2026_07_08_SIAM_BioNetGen\ModelFilesAndOutputs\Example_SimpleSTAT\2026_07_07__13_47_25\Example_SimpleSTAT.bngl.
+CPU TIME: total 0.05 s.

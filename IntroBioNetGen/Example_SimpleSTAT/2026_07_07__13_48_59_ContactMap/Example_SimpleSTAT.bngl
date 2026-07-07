@@ -1,0 +1,86 @@
+begin model
+
+begin parameters
+  il10_il10r1_binding 0.200815
+  il10_il10r1_unbinding 0.00000774704
+  il10r1_il10r2_binding 3.15924
+  il10r1_il10r2_unbinding 0.00000361185
+  il10_complex_jak1_binding 1003.25
+  il10_complex_jak1_unbinding 0.0000476335
+  il10_jak1_med_STAT3_act 1.08116
+  il10_jak1_med_STAT1_act 0.0000000197800
+  SOCS1_jak1_binding 9.23454
+  SOCS1_jak1_unbinding 0.00000415259
+  pSTAT3_rec_dissoc 1.77990
+  pSTAT1_rec_dissoc 3.16032
+  PTP_med_STAT3_deact 0.046620
+  PTP_med_STAT1_deact 0.111965
+  STAT3_SOCS1_ind 0.00556053
+  STAT1_SOCS1_ind 11.00256433
+  IL10_0 10
+  IL10R1_0 2.12893
+  IL10R2_0 5889.76
+  JAK1_0 6.83256
+  SOCS1_0 0
+  PTP3_0 1
+  PTP1_0 1
+  SOCS1_degrad 10.2990
+  STAT3_0 48.2472
+  STAT1_0 929991
+end parameters
+
+begin molecule types
+  IL10(il10r1)
+  IL10R1(il10,il10r2,jak1,stat)
+  IL10R2(il10r1)
+  JAK1(rec,socs1)
+  PTP1()
+  PTP3()
+  SOCS1(jak1)
+  STAT1(Y~0~P)
+  STAT3(Y~0~P)
+end molecule types
+
+begin species
+  IL10(il10r1) IL10_0
+  IL10R1(il10,il10r2,jak1,stat) IL10R1_0
+  IL10R2(il10r1) IL10R2_0
+  JAK1(rec,socs1) JAK1_0
+  SOCS1(jak1) SOCS1_0
+  PTP3() PTP3_0
+  PTP1() PTP1_0
+  STAT3(Y~0) STAT3_0
+  STAT1(Y~0) STAT1_0
+end species
+
+begin observables
+  Molecules total_pSTAT3 STAT3(Y~P!?)
+  Molecules total_pSTAT1 STAT1(Y~P!?)
+  Molecules total_pSTAT3_explicitdefinition STAT3(Y~P),IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3).STAT3(Y~P!4)
+  Molecules total_pSTAT1_explicitdefinition STAT1(Y~P),IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3).STAT1(Y~P!4)
+  Species total_pSTAT3_species STAT3(Y~P!?)
+  Species total_pSTAT1_species STAT1(Y~P!?)
+end observables
+
+begin reaction rules
+  _R1: IL10R1(il10,il10r2,jak1,stat) + IL10(il10r1) <-> IL10R1(il10!1,il10r2,jak1,stat).IL10(il10r1!1) il10_il10r1_binding,il10_il10r1_unbinding 
+  _R2: IL10R1(il10!1,il10r2,jak1,stat).IL10(il10r1!1) + IL10R2(il10r1) <-> IL10R1(il10!1,il10r2!2,jak1,stat).IL10(il10r1!1).IL10R2(il10r1!2) il10r1_il10r2_binding,il10r1_il10r2_unbinding 
+  _R3: IL10R1(il10!1,il10r2!2,jak1,stat).IL10(il10r1!1).IL10R2(il10r1!2) + JAK1(rec,socs1) <-> IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) il10_complex_jak1_binding,il10_complex_jak1_unbinding 
+  _R4: IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) + SOCS1(jak1) <-> IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1!4).SOCS1(jak1!4) SOCS1_jak1_binding,SOCS1_jak1_unbinding 
+  _R5: IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT3(Y~0) -> IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT3(Y~P!4) il10_jak1_med_STAT3_act 
+  _R6: IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT3(Y~P!4) -> IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT3(Y~P) pSTAT3_rec_dissoc 
+  _R7: IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT1(Y~0) -> IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT1(Y~P!4) il10_jak1_med_STAT1_act 
+  _R8: IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT1(Y~P!4) -> IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10(il10r1!1).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT1(Y~P) pSTAT1_rec_dissoc 
+  _R9: PTP3() + STAT3(Y~P) -> PTP3() + STAT3(Y~0) PTP_med_STAT3_deact 
+  _R10: PTP1() + STAT1(Y~P) -> PTP1() + STAT1(Y~0) PTP_med_STAT1_deact 
+  _R11: STAT3(Y~P) -> STAT3(Y~P) + SOCS1(jak1) STAT3_SOCS1_ind 
+  _R12: STAT1(Y~P) -> STAT1(Y~P) + SOCS1(jak1) STAT1_SOCS1_ind 
+  _R13: SOCS1(jak1) -> 0 SOCS1_degrad DeleteMolecules
+end reaction rules
+
+end model
+
+visualize({type=>'contactmap'})
+visualize({type=>'ruleviz_pattern'})
+visualize({type=>'ruleviz_operation'})
+visualize({type=>'regulatory',background=>1,ruleNames=>1})

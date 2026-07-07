@@ -1,0 +1,94 @@
+# Created by BioNetGen 2.9.2
+begin parameters
+    1 il10_il10r1_binding              0.200815  # Constant
+    2 il10_il10r1_unbinding            0.00000774704  # Constant
+    3 il10r1_il10r2_binding            3.15924  # Constant
+    4 il10r1_il10r2_unbinding          0.00000361185  # Constant
+    5 il10_complex_jak1_binding        1003.25  # Constant
+    6 il10_complex_jak1_unbinding      0.0000476335  # Constant
+    7 il10_jak1_med_STAT3_act          1.08116  # Constant
+    8 il10_jak1_med_STAT1_act          0.0000000197800  # Constant
+    9 SOCS1_jak1_binding               9.23454  # Constant
+   10 SOCS1_jak1_unbinding             0.00000415259  # Constant
+   11 pSTAT3_rec_dissoc                1.77990  # Constant
+   12 pSTAT1_rec_dissoc                3.16032  # Constant
+   13 PTP_med_STAT3_deact              0.046620  # Constant
+   14 PTP_med_STAT1_deact              0.111965  # Constant
+   15 STAT3_SOCS1_ind                  0.00556053  # Constant
+   16 STAT1_SOCS1_ind                  11.00256433  # Constant
+   17 IL10_0                           1  # Constant
+   18 IL10R1_0                         2.12893  # Constant
+   19 IL10R2_0                         5889.76  # Constant
+   20 JAK1_0                           6.83256  # Constant
+   21 SOCS1_0                          0  # Constant
+   22 PTP3_0                           1  # Constant
+   23 PTP1_0                           1  # Constant
+   24 SOCS1_degrad                     10.2990  # Constant
+   25 STAT3_0                          48.2472  # Constant
+   26 STAT1_0                          929991  # Constant
+end parameters
+begin species
+    1 IL10(il10r1) IL10_0
+    2 IL10R1(il10,il10r2,jak1,stat) IL10R1_0
+    3 IL10R2(il10r1) IL10R2_0
+    4 JAK1(rec,socs1) JAK1_0
+    5 SOCS1(jak1) SOCS1_0
+    6 PTP3() PTP3_0
+    7 PTP1() PTP1_0
+    8 STAT3(Y~0) STAT3_0
+    9 STAT1(Y~0) STAT1_0
+   10 IL10(il10r1!1).IL10R1(il10!1,il10r2,jak1,stat) 0
+   11 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1,stat).IL10R2(il10r1!2) 0
+   12 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) 0
+   13 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1!4).SOCS1(jak1!4) 0
+   14 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT3(Y~P!4) 0
+   15 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT1(Y~P!4) 0
+   16 STAT3(Y~P) 0
+   17 STAT1(Y~P) 0
+end species
+begin reactions
+    1 1,2 10 il10_il10r1_binding #_R1
+    2 5 0 SOCS1_degrad #_R13
+    3 10 1,2 il10_il10r1_unbinding #_reverse__R1
+    4 3,10 11 il10r1_il10r2_binding #_R2
+    5 11 3,10 il10r1_il10r2_unbinding #_reverse__R2
+    6 4,11 12 il10_complex_jak1_binding #_R3
+    7 12 4,11 il10_complex_jak1_unbinding #_reverse__R3
+    8 5,12 13 SOCS1_jak1_binding #_R4
+    9 8,12 14 il10_jak1_med_STAT3_act #_R5
+   10 9,12 15 il10_jak1_med_STAT1_act #_R7
+   11 13 5,12 SOCS1_jak1_unbinding #_reverse__R4
+   12 14 12,16 pSTAT3_rec_dissoc #_R6
+   13 15 12,17 pSTAT1_rec_dissoc #_R8
+   14 6,16 6,8 PTP_med_STAT3_deact #_R9
+   15 7,17 7,9 PTP_med_STAT1_deact #_R10
+   16 16 5,16 STAT3_SOCS1_ind #_R11
+   17 17 5,17 STAT1_SOCS1_ind #_R12
+end reactions
+begin reactions_text
+    1 IL10R1(il10,il10r2,jak1,stat) + IL10(il10r1) -> IL10(il10r1!1).IL10R1(il10!1,il10r2,jak1,stat) il10_il10r1_binding #_R1
+    2 SOCS1(jak1) ->  SOCS1_degrad #_R13
+    3 IL10(il10r1!1).IL10R1(il10!1,il10r2,jak1,stat) -> IL10R1(il10,il10r2,jak1,stat) + IL10(il10r1) il10_il10r1_unbinding #_reverse__R1
+    4 IL10(il10r1!1).IL10R1(il10!1,il10r2,jak1,stat) + IL10R2(il10r1) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1,stat).IL10R2(il10r1!2) il10r1_il10r2_binding #_R2
+    5 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1,stat).IL10R2(il10r1!2) -> IL10(il10r1!1).IL10R1(il10!1,il10r2,jak1,stat) + IL10R2(il10r1) il10r1_il10r2_unbinding #_reverse__R2
+    6 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1,stat).IL10R2(il10r1!2) + JAK1(rec,socs1) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) il10_complex_jak1_binding #_R3
+    7 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1,stat).IL10R2(il10r1!2) + JAK1(rec,socs1) il10_complex_jak1_unbinding #_reverse__R3
+    8 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + SOCS1(jak1) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1!4).SOCS1(jak1!4) SOCS1_jak1_binding #_R4
+    9 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT3(Y~0) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT3(Y~P!4) il10_jak1_med_STAT3_act #_R5
+   10 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT1(Y~0) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT1(Y~P!4) il10_jak1_med_STAT1_act #_R7
+   11 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1!4).SOCS1(jak1!4) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + SOCS1(jak1) SOCS1_jak1_unbinding #_reverse__R4
+   12 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT3(Y~P!4) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT3(Y~P) pSTAT3_rec_dissoc #_R6
+   13 IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat!4).IL10R2(il10r1!2).JAK1(rec!3,socs1).STAT1(Y~P!4) -> IL10(il10r1!1).IL10R1(il10!1,il10r2!2,jak1!3,stat).IL10R2(il10r1!2).JAK1(rec!3,socs1) + STAT1(Y~P) pSTAT1_rec_dissoc #_R8
+   14 PTP3() + STAT3(Y~P) -> PTP3() + STAT3(Y~0) PTP_med_STAT3_deact #_R9
+   15 PTP1() + STAT1(Y~P) -> PTP1() + STAT1(Y~0) PTP_med_STAT1_deact #_R10
+   16 STAT3(Y~P) -> STAT3(Y~P) + SOCS1(jak1) STAT3_SOCS1_ind #_R11
+   17 STAT1(Y~P) -> STAT1(Y~P) + SOCS1(jak1) STAT1_SOCS1_ind #_R12
+end reactions_text
+begin groups
+    1 total_pSTAT3         14,16
+    2 total_pSTAT1         15,17
+    3 total_pSTAT3_explicitdefinition 14,16
+    4 total_pSTAT1_explicitdefinition 15,17
+    5 total_pSTAT3_species 14,16
+    6 total_pSTAT1_species 15,17
+end groups
