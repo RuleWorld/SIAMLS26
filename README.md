@@ -1,5 +1,5 @@
 ---
-title: Rule-Based Modeling Minitutorial — SIAM LS26
+title: Structure-based Modeling of Biochemical Reaction Networks using BioNetGen — SIAM LS26
 ---
 
 # Rule-Based Modeling with BioNetGen
