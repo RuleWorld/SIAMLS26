@@ -1,0 +1,61 @@
+begin model
+begin parameters
+    Lig_tot  6.0e3  # units: molecules
+    Rec_tot  4.0e2  # units: molecules
+    Lyn_tot  2.8e1  # units: molecules
+
+     kp1  1.32845238e-7  # units: /molecule/s
+     km1  0              # units: /s
+     kp2  2.5e-1         # units: /molecule/s
+     km2  0              # units: /s
+     kpL  5e-2           # units: /molecule/s
+     kmL  20             # units: /s
+     pLb  30             # units: /s
+      dm   20            # units: /s
+end parameters
+
+begin molecule types
+	Lig(fc,fc)
+	Rec(alpha,beta~0~P,gamma~0~P)
+	Lyn(U,SH2)
+end molecule types
+
+begin seed species
+    Lig(fc,fc)                      Lig_tot
+    Lyn(U,SH2)                      Lyn_tot
+    Rec(alpha,beta~0,gamma~0)       Rec_tot
+end seed species
+
+begin observables
+	Molecules RecDimer1	   Rec(alpha!1).Lig(fc!1,fc!2).Rec(alpha!2) # full pattern
+    Molecules RecDimer2	   Lig(fc!+,fc!+) # using bond wildcards
+    Molecules LynFree      Lyn(U,SH2) # counts free Lyn
+    Molecules LynBoundU    Lyn(U!1).Rec(beta!1) # counts Lyn bound to receptors through U domain
+    Molecules BetaP1        Rec(beta~P) # counts only receptors with beta unbound
+    Molecules BetaP2        Rec(beta~P!?) # counts all receptors with beta phosphorylated
+end observables
+
+begin reaction rules
+    # Ligand-receptor binding      
+    R1: Rec(alpha) + Lig(fc,fc) <-> Rec(alpha!1).Lig(fc!1,fc)  kp1, km1
+
+    # Receptor-aggregation
+    R2: Rec(alpha) + Lig(fc,fc!+) <-> Rec(alpha!2).Lig(fc!2,fc!+)  kp2, km2
+
+    # Constitutive Lyn-receptor binding
+    R3: Rec(beta~0) + Lyn(U,SH2) <-> Rec(beta~0!1).Lyn(U!1,SH2)  kpL, kmL
+
+    # Transphosphorylation of beta by constitutive Lyn
+	R4: Lyn(U!1).Rec(beta!1,alpha!2).Lig(fc!2,fc!3).Rec(alpha!3,beta~0) -> \
+        Lyn(U!1).Rec(beta!1,alpha!2).Lig(fc!2,fc!3).Rec(alpha!3,beta~P) pLb
+
+    # Dephosphorylation of Rec beta
+    R14: Rec(beta~P) -> Rec(beta~0)  dm
+
+end reaction rules
+
+end model
+
+## actions ##
+generate_network({overwrite=>1})
+simulate({method=>"ode",t_end=>1200,n_steps=>200})

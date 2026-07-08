@@ -1,6 +1,10 @@
 models/results_*
 IntroBioNetGen/results_*
 notebooks/results_*
+notebooks/claude_files/
+notebooks/estimation_results/
+notebooks/petab_files/
+notebooks/__pycache__/
 .vscode/settings.json
 .DS_Store
 .DS_Store/
