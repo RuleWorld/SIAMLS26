@@ -16,7 +16,7 @@ begin parameters
    14 PTP_med_STAT1_deact              0.111965  # Constant
    15 STAT3_SOCS1_ind                  0.00556053  # Constant
    16 STAT1_SOCS1_ind                  11.00256433  # Constant
-   17 IL10_0                           1  # Constant
+   17 IL10_0                           10  # Constant
    18 IL10R1_0                         2.12893  # Constant
    19 IL10R2_0                         5889.76  # Constant
    20 JAK1_0                           6.83256  # Constant

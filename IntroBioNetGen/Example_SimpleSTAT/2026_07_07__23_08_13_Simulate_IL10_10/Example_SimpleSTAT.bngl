@@ -36,7 +36,7 @@ begin parameters
 
 	# initial ligand concentrations (1)
 	# ---------------------------------
-	IL10_0 1
+	IL10_0 10
 
 	# initial receptor concentrations (4)
 	# -----------------------------------
